@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Way2News Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./assets/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- ====== Hero Section Start -->
+    <div class="bg-gray-50 flex items-center">
+        <section class="bg-cover bg-center w-full" style="background-image: url('./images/hero-bg-image.png');">
+            <div class="container mx-auto text-left text-white px-4 lg:px-20">
+                <div class="flex flex-wrap lg:justify-between mt-40 mx-4">
+                    <div class="w-full lg:w-1/3 mr-auto">
+                        <img src="./images/logo.png" class="w-32 pb-10 mx-auto md:ml-0" alt="Logo">
+                        <div class="mb-12 lg:mb-0">
+                            <p class="text-lg font-medium text-yellow text-center lg:text-left">India's #1</p>
+                            <h1 class="text-5xl font-medium mb-6 text-center lg:text-left">Hyperlocal
+                                News Platform</h1>
+                            <p class="text-xl mb-12 text-center lg:text-left">One stop destination for reaching your
+                                local audience effectively.</p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
+                        <div class="bg-white w-full lg:w-full rounded-lg p-8 sm:p-12 mb-10 lg:-mb-20 shadow-lg ml-auto">
+                            <form class="w-full max-w-sm mx-auto">
+                                <h2 class="mb-4 text-3xl font-bold text-black dark:text-white">Enter Your Details</h2>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="full-name">Full
+                                        Name</label>
+                                    <input
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                                        type="text" id="full-name" name="full-name" placeholder="Your Full Name">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email
+                                        Address</label>
+                                    <input
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                                        type="email" id="email" name="email" placeholder="User@gmail.com">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Phone</label>
+                                    <div class="flex">
+                                        <button id="states-button" data-dropdown-toggle="dropdown-states"
+                                            class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+                                            type="button">
+                                            +91 <svg aria-hidden="true" class="w-4 h-4 ml-1" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+                                        <div id="dropdown-states"
+                                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="states-button">
+                                                <li>
+                                                    <button type="button"
+                                                        class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                        <div class="inline-flex items-center">
+                                                            <svg aria-hidden="true"
+                                                                class="h-3.5 w-3.5 rounded-full mr-2"
+                                                                xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us"
+                                                                viewBox="0 0 512 512">
+                                                                <g fill-rule="evenodd">
+                                                                    <g stroke-width="1pt">
+                                                                        <path fill="#bd3d44"
+                                                                            d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                                                            transform="scale(3.9385)" />
+                                                                        <path fill="#fff"
+                                                                            d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
+                                                                            transform="scale(3.9385)" />
+                                                                    </g>
+                                                                    <path fill="#192f5d" d="M0 0h98.8v70H0z"
+                                                                        transform="scale(3.9385)" />
+                                                                    <path fill="#fff"
+                                                                        d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
+                                                                        transform="scale(3.9385)" />
+                                                                </g>
+                                                            </svg>
+                                                            United States
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                        <div class="inline-flex items-center">
+                                                            <svg aria-hidden="true"
+                                                                class="h-3.5 w-3.5 rounded-full mr-2"
+                                                                xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de"
+                                                                viewBox="0 0 512 512">
+                                                                <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                                                                <path d="M0 0h512v170.7H0z" />
+                                                                <path fill="#d00" d="M0 170.7h512v170.6H0z" />
+                                                            </svg>
+                                                            Germany
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                        <div class="inline-flex items-center">
+                                                            <svg aria-hidden="true"
+                                                                class="h-3.5 w-3.5 rounded-full mr-2"
+                                                                xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it"
+                                                                viewBox="0 0 512 512">
+                                                                <g fill-rule="evenodd" stroke-width="1pt">
+                                                                    <path fill="#fff" d="M0 0h512v512H0z" />
+                                                                    <path fill="#009246" d="M0 0h170.7v512H0z" />
+                                                                    <path fill="#ce2b37" d="M341.3 0H512v512H341.3z" />
+                                                                </g>
+                                                            </svg>
+                                                            Italy
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                                        <div class="inline-flex items-center">
+                                                            <svg aria-hidden="true"
+                                                                class="h-3.5 w-3.5 rounded-full mr-2"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                id="flag-icon-css-cn" viewBox="0 0 512 512">
+                                                                <defs>
+                                                                    <path id="a" fill="#ffde00"
+                                                                        d="M1-.3L-.7.8 0-1 .6.8-1-.3z" />
+                                                                </defs>
+                                                                <path fill="#de2910" d="M0 0h512v512H0z" />
+                                                                <use width="30" height="20"
+                                                                    transform="matrix(76.8 0 0 76.8 128 128)"
+                                                                    xlink:href="#a" />
+                                                                <use width="30" height="20"
+                                                                    transform="rotate(-121 142.6 -47) scale(25.5827)"
+                                                                    xlink:href="#a" />
+                                                                <use width="30" height="20"
+                                                                    transform="rotate(-98.1 198 -82) scale(25.6)"
+                                                                    xlink:href="#a" />
+                                                                <use width="30" height="20"
+                                                                    transform="rotate(-74 272.4 -114) scale(25.6137)"
+                                                                    xlink:href="#a" />
+                                                                <use width="30" height="20"
+                                                                    transform="matrix(16 -19.968 19.968 16 256 230.4)"
+                                                                    xlink:href="#a" />
+                                                            </svg>
+                                                            China
+                                                        </div>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <input
+                                            class="w-full px-3 py-2 border border-gray-300 rounded-r-md focus:outline-none focus:border-indigo-500"
+                                            type="text" id="phone" name="phone" placeholder="9990900000">
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="company-name">Company
+                                        Name</label>
+                                    <input
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                                        type="text" id="company-name" name="company-name"
+                                        placeholder="Your Company Name">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2"
+                                        for="designation">Designation</label>
+                                    <input
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                                        type="email" id="designation" name="designation" placeholder="Ex: Manager">
+                                </div>
+                                <button
+                                    class="w-full btn-blue text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300"
+                                    type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ====== Contact Section feature one-->
+    <section class="bgcolor-gray">
+        <div class="mx-auto">
+            <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16 lg:pt-20">
+                <div class="relative">
+                    <img class="w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/hyd-img.png"
+                        alt="feature image 2">
+                    <span
+                        class="absolute lg:top-20 -bottom-12 lg:right-0 left-10 lg:left-auto z-[-1] rotate-45 lg:rotate-0">
+                        <img class="" src="./images/arrow-1.png" alt="arrow">
+                    </span>
+                </div>
+                <div class="sm:text-lg dark:text-gray-400 text-white lg:mr-20 px-10 lg:px-20 pt-20 lg:pt-0">
+                    <p class="text-lg font-medium text-yellow text-center lg:text-left">Way2News</p>
+                    <h3 class="mb-2 text-2xl dark:text-white text-center lg:text-left">The Real Hyperlocal Platform For
+                        All Your <span class="font-bold ">Brand Promotions In Telugu</span></h3>
+                    <div class="col-span-2 space-y-8 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 mb-6 py-10">
+                        <div>
+                            <h1 class="lg:text-4xl text-2xl font-medium text-yellow  text-center lg:text-left">10 M+ </h1>
+                            <div class="text-sm dark:text-white  text-center lg:text-left">Active Users</div>
+                        </div>
+                        <div>
+                            <h1 class="lg:text-4xl text-2xl font-medium text-yellow  text-center lg:text-left">28 mins</h1>
+                            <div class="text-sm dark:text-white  text-center lg:text-left">Time on App</div>
+                        </div>
+                        <div>
+                            <h1 class="lg:text-4xl text-2xl font-medium text-yellow text-center lg:text-left">100+</h1>
+                            <div class="text-sm dark:text-white  text-center lg:text-left">Average Views</div>
+                        </div>
+                        <div>
+                            <h1 class="lg:text-4xl text-2xl font-medium text-yellow text-center lg:text-left">15B</h1>
+                            <div class="text-sm dark:text-white  text-center lg:text-left">Views per month</div>
+                        </div>
+                    </div>
+                    <p class="text-sm lg:pb-6 pb-20 text-center lg:text-left">Our extremely diversified user base from village,
+                        taluk, mandal to metro cities level will ensure more than 70% of brand responses through geo
+                        targeting/hyperlocal approach.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== Contact Section feature slider-->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
+            <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12 pt-20">
+                <h2 class="mb-6 text-sm font-extrabold text-black dark:text-white text-center">Multiple Advertising
+                    Options on Your Table.</p>
+                    <p class="mb-5 font-light text-black sm:text-xl dark:text-gray-400 text-center">Advertise Your Brand
+                        & <span class="font-bold text-black">Reach 10 million+</span> diversified audiences today !!</p>
+            </div>
+
+            <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+                <div class="w-full relative flex items-center justify-center">
+                    <button aria-label="slide backward"
+                        class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+                        id="prev">
+                        <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                        <div id="slider"
+                            class="h-full flex lg:gap-20 md:gap-6 gap-4 items-center justify-start transition ease-out duration-700">
+                            <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                                <img class="lg:h-72 p-1 " src="./images/phone-1.png" alt="Phone image">
+                            </div>
+                            <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                                <img class="lg:h-72 p-1" src="./images/phone-2.png" alt="Phone image">
+                            </div>
+                            <div class="flex flex-shrink-0 relative w-full sm:w-auto ">
+                                <img class="lg:h-96 p-1 -mb-20 " src="./images/phone-5.png" alt="Phone image">
+                            </div>
+                            <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                                <img class="lg:h-72 p-1" src="./images/phone-3.png" alt="Phone image">
+                            </div>
+                            <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                                <img class="lg:h-72 p-1" src="./images/phone-4.png" alt="Phone image">
+                            </div>
+
+                        </div>
+                    </div>
+                    <button aria-label="slide forward"
+                        class="absolute right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+                        id="next">
+                        <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-screen-md mx-auto text-center pb-16">
+                <button
+                    class="btn-blue relative flex z-10 text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none mx-auto"
+                    type="submit"><span class="inline-block pr-4 text-white mb-1">Advertise now</span>
+                    <svg width="17" height="16" class=" mt-1" viewBox="0 0 17 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.0623 6.57617L7.6959 2.32061L9.4408 0.530273L15.8156 6.74324L16.711 7.61597L15.838 8.51115L9.46324 15.0477L7.67346 13.3022L11.7949 9.07617H0.958984V6.57617H12.0623Z"
+                            fill="white" />
+                    </svg></button>
+            </div>
+        </div>
+    </section>
+    <!-- ====== Contact Section Start -->
+    <section class="bgcolor-contact py-20 lg:py-[120px] overflow-hidden relative z-10">
+        <div class="container mx-auto text-left px-4 lg:px-32">
+            <div class="flex flex-wrap lg:justify-around -mx-4">
+                <div class="w-full lg:w-1/4 lg:px-2 px-4">
+                    <div class="mb-12 lg:mb-0">
+                        <h2 class="mb-4 text-3xl font-bold text-gray-900 dark:text-white">Get in touch</h2>
+                        <p class="mb-5 font-medium text-black text-md dark:text-gray-400">Love to see you here,
+                            <br>contact us to promote your brand.</p>
+                        <div class="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.44324 8.69508C6.41324 0.0350804 19.2432 0.0450807 21.2032 8.70508C21.8327 11.4858 21.1708 14.0328 19.9883 16.2051C19.0106 18.0012 17.677 19.5411 16.4232 20.7451C14.4132 22.6851 11.2332 22.6851 9.21324 20.7451C6.45324 18.0851 3.29324 13.7751 4.44324 8.69508Z"
+                                    fill="#2F5DFF" />
+                                <path
+                                    d="M12.8232 13.6351C14.5464 13.6351 15.9432 12.2382 15.9432 10.5151C15.9432 8.79195 14.5464 7.39508 12.8232 7.39508C11.1001 7.39508 9.70324 8.79195 9.70324 10.5151C9.70324 12.2382 11.1001 13.6351 12.8232 13.6351Z"
+                                    fill="white" />
+                            </svg>
+
+                            <div class="ml-4 text-black text-md w-40">
+                                Acme Inc, Street, State,
+                                Postal Code
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.22324 7.02508L16.7132 4.19508C20.5232 2.92508 22.5932 5.00508 21.3332 8.81508L18.5032 17.3051C16.6032 23.0151 13.4832 23.0151 11.5832 17.3051L10.7432 14.7851L8.22324 13.9451C2.51324 12.0451 2.51324 8.93508 8.22324 7.02508Z"
+                                    fill="#2F5DFF" />
+                                <path d="M10.9332 14.3551L14.5132 10.7651" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+
+                            <div class="ml-4 text-black text-md">
+                                info@acme.org
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-4 text-gray-600 dark:text-gray-400">
+                            <svg class="ml-1" width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.7031 4.71216V13.699C14.7031 17.2937 13.8044 18.1924 10.2097 18.1924H4.81763C1.2229 18.1924 0.324219 17.2937 0.324219 13.699V4.71216C0.324219 1.11743 1.2229 0.21875 4.81763 0.21875H10.2097C13.8044 0.21875 14.7031 1.11743 14.7031 4.71216Z"
+                                    fill="#2F5DFF" />
+                                <path d="M9.31152 3.36426H5.7168" stroke="white" stroke-width="1.34802"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M7.51405 15.5867C8.28336 15.5867 8.90701 14.963 8.90701 14.1937C8.90701 13.4244 8.28336 12.8008 7.51405 12.8008C6.74474 12.8008 6.12109 13.4244 6.12109 14.1937C6.12109 14.963 6.74474 15.5867 7.51405 15.5867Z"
+                                    fill="white" />
+                            </svg>
+
+                            <div class="ml-5 text-black text-md">
+                                +44 1234567890
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="lg:h-72 p-1 my-auto" src="./images/chat.png" alt="Chat image">
+            </div>
+        </div>
+    </section>
+    <!-- ====== Footer Section Start -->
+    <footer class="bg-gray-800">
+        <div class="container mx-auto text-left px-4 lg:px-20">
+            <hr class="border-gray-200 sm:mx-auto dark:border-gray-700">
+            <div class="text-center py-10">
+                <span class="block text-sm font-bold text-center text-white dark:text-gray-400 justify-between"><span>Copyright
+                        @ 2023 Way2News Private Limited All rights reserved.</span> <a href="#"
+                        class="text-blue-600 hover:underline px-10">Terms & Conditions</a> <a href="#"
+                        class="text-blue-600 hover:underline">Privacy policy</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="./assets/script.js"></script>
+</html>
